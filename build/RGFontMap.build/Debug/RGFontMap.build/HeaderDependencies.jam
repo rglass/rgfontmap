@@ -1,0 +1,6 @@
+rule DefineHeaderDependencies
+{
+}
+
+DefineHeaderDependencies "<RGFontMap>RGFontMap.app" ;
+
