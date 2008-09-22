@@ -13,9 +13,19 @@ public class RGFontMap {
     private static final String defaultSampleText = "0 123 456 789";
         
     public static void main(final String args[]) {
-        new RGFontMapPreferences(defaultFontSize, defaultSampleText);
-        new RGFontMapFrame(defaultFontSize,
-                           defaultSampleText);
+        try {
+            javax.swing.SwingUtilities.invokeLater(new Runnable() {
+                    public void run() {
+                        new RGFontMapPreferences(defaultFontSize,
+                                                 defaultSampleText);
+                        new RGFontMapFrame(defaultFontSize,
+                                           defaultSampleText);
+
+                    }
+                });
+        } catch (Exception e) {
+        }
+
     }
 }
 

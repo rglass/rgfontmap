@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="RGFontMap">
+<project name="RGFontMap" basedir="." default="run">
 
   <property name="src.dir" value="src" />
   <property name="classes.dir" value="classes" />
@@ -20,6 +20,10 @@
         <attribute name="MAIN-CLASS" value="RGFontMap"/>
       </manifest>
     </jar>
-  </target> 
+  </target>
+
+  <target name="run" depends="jar">
+    <java jar="RGFontMap.jar" fork="true" />
+  </target>
 
 </project>
