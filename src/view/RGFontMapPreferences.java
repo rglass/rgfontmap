@@ -1,3 +1,5 @@
+package view;
+
 //
 //  RGFontMapPreferences.java
 //  RGFontMap
@@ -25,13 +27,13 @@ import java.awt.event.WindowEvent;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingUtilities;
 
-class RGFontMapPreferences extends JFrame {
+public class RGFontMapPreferences extends JFrame {
     int defaultFontSize;
     String defaultSampleText;
     JTextField textfield;
     JList list;
     
-    RGFontMapPreferences(int adefaultFontSize, String adefaultSampleText) {
+    public RGFontMapPreferences(int adefaultFontSize, String adefaultSampleText) {
         super("Preferences");
         defaultFontSize = adefaultFontSize;
         defaultSampleText = adefaultSampleText;

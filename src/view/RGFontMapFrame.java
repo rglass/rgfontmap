@@ -1,3 +1,5 @@
+package view;
+
 import javax.swing.JFrame;
 import javax.swing.JTextPane;
 import java.awt.BorderLayout;
@@ -21,10 +23,11 @@ import javax.swing.text.StyleConstants;
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.GraphicsEnvironment;
+import printing.PrintableJTextPane;
 
 
-class RGFontMapFrame extends JFrame {
-    RGFontMapFrame(int defaultFontSize,
+public class RGFontMapFrame extends JFrame {
+    public RGFontMapFrame(int defaultFontSize,
                    String defaultSampleText) {
         new RGFontMapFrame(GraphicsEnvironment
                        .getLocalGraphicsEnvironment()
@@ -33,7 +36,7 @@ class RGFontMapFrame extends JFrame {
                        defaultSampleText);
     }
     
-    RGFontMapFrame(String[] fonts,
+    public RGFontMapFrame(String[] fonts,
                    int defaultFontSize,
                    String defaultSampleText) {
         super("Font-Map");

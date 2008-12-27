@@ -1,12 +1,13 @@
+package controller;
+
 //  RGFontMap.java
 //  RGFontMap
 //
 //  Created by Roman Glass on 01.09.08.
 //  Copyright (c) 2008 Roman Glass. All rights reserved.
 
-import java.awt.GraphicsEnvironment;
-import java.awt.Dimension;
-import java.awt.Toolkit;
+import view.RGFontMapFrame;
+import view.RGFontMapPreferences;
 
 public class RGFontMap {
     private static final int defaultFontSize = 20;

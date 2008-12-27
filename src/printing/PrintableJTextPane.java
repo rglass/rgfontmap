@@ -1,3 +1,6 @@
+package printing;
+
+import view.PrintView;
 import java.awt.print.Printable;
 import javax.swing.JTextPane;
 import java.awt.Graphics;
@@ -8,11 +11,11 @@ import javax.swing.text.Element;
 import javax.swing.text.View;
 
 
-class PrintableJTextPane implements Printable {
+public class PrintableJTextPane implements Printable {
     JTextPane textPane;
     PrintView printView;
         
-    PrintableJTextPane(JTextPane atextPane) {
+    public PrintableJTextPane(JTextPane atextPane) {
         textPane = atextPane;
     }
         
