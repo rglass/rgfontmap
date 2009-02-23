@@ -17,7 +17,7 @@
   <target name="jar" description="JARs the Task" depends="compile"> 
     <jar destfile="${ant.project.name}.jar" basedir="${classes.dir}"> 
       <manifest>
-        <attribute name="MAIN-CLASS" value="RGFontMap"/>
+        <attribute name="MAIN-CLASS" value="controller.RGFontMap"/>
       </manifest>
     </jar>
   </target>
